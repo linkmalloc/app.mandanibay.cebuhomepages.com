@@ -31,10 +31,13 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Rooms", name: "rooms", widget: "string"}
       - {label: "Beds", name: "beds", widget: "string"}
       - {label: "Baths", name: "baths", widget: "string"}
-      - {label: "Images", name: "images", widget: "list", allow_add: true, fields: 
+      - label: "Images"
+        name: "images" 
+        widget: "list" 
+        allow_add: true
+        fields: 
         - {label: "1170x800", name: "1170x800", widget: string, default: "link to cloudinary_image"}
         - {label: "230x105", name: "230x105", widget: string, default: "link to cloudinary_image"}
-        }
       - {label: Name, name: name, widget: string, default: "Emmet"}
       - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
       - {label: "Tags", name: "tags", widget: "list", default: ["for sale"], required: false}
