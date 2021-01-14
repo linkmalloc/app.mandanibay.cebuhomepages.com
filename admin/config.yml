@@ -36,8 +36,6 @@ collections: # A list of collections the CMS should be able to edit
         fields: 
         - {label: "1170x800", name: "1170x800", widget: string, default: "link to cloudinary_image"}
         - {label: "230x105", name: "230x105", widget: string, default: "link to cloudinary_image"}
-      - {label: Name, name: name, widget: string, default: "Emmet"}
-      - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
       - {label: "Tags", name: "tags", widget: "list", default: ["for sale"], required: false}
       - {label: "Property Description", name: "body", widget: "markdown"}
       - {label: "Categories", name: "categories", widget: "string", default: "residence", required: false}
