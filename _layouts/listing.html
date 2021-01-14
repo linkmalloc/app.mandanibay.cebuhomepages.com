@@ -1,0 +1,406 @@
+---
+layout: default
+---
+
+<div class="property-header-content pt-86 pb-100">
+    <div class="container pt-60">
+        <div class="row">
+            <div class="col-md-10 pl-0">
+                <div class="heading-flex row">
+                    <div class="col-md-8">
+                        <h2>{{ page.title }}</h2>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><i class="fas fa-map-marker-alt primary-color"></i> {{ page.address }}</li>
+                            <li class="list-inline-item heading-primary">Posted: 7 months ago</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tag-group">
+                            <a href="#" class="tag-blue">For Sale</a>
+                            <a href="#" class="tag-primary">Featured</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 text-right pr-0">
+                <h2>{{ page.price }}</h2>
+            </div>
+        </div>
+        <div class="row mb-30">
+            <div class="col-md-6 pl-0">
+                <ul class="list-inline">
+                    <li class="list-inline-item">Types: <span class="heading-primary">Office</span></li>
+                    <li class="list-inline-item">Category: <span class="heading-primary">Office</span></li>
+                </ul>
+            </div>
+            <div class="col-md-6 justify-self-end text-right pr-0">
+                <div class="content-middle">
+                    <p class="mb-0 d-inline-block"><i class="flaticon-building pr-1 primary-color"></i> Rooms: {{ page.rooms }} / Bed:
+                        {{ page.beds }} / Bath: {{ page.baths }}</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" class="favorite-feature"><i
+                                    class="far fa-heart"></i></a></li>
+                        <li class="list-inline-item"><a href="#" class="favorite-feature"><i
+                                    class="fas fa-exchange-alt"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="property-list-images">
+            <div class="property-list-carousel">
+                {% for i11700x800 in page.images %}
+                <div class="slider-item">
+                    <img src="{{ i11700x800.11700x800 }}" alt="{{ page.title }}" class="img-fluid">
+                </div>
+                {% endfor %}
+            </div>
+            <div class="property-list-navigation">
+                {% for i230x105 in page.images %}
+                <div class="property-nav">
+                    <img src="{{ i230x105.230x105 }}" alt="Behome" class="img-fluid">
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="property-main-content pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="single-item mb-30 intro-content">
+                    <div class="heading">
+                        <h4>Property Description</h4>
+                    </div>
+                    {{ page.content }}
+                    <a href="#" class="download primary-color"><i class="far fa-file-archive"></i> PDF Download</a>
+                </div>
+                <div class="single-item detail-feature mb-30">
+                    <h4>Details & Features</h4>
+                    <div class="lists mb-30">
+                        <ul class="detail-list">
+                            <li><i class="fas fa-car-alt"></i> Parking: <span class="heading-primary">02</span></li>
+                            <li><i class="fas fa-bed"></i> Beds: <span class="heading-primary">03</span></li>
+                            <li><i class="fas fa-bath"></i> Bath: <span class="heading-primary">02</span></li>
+                            <li><i class="fas fa-map"></i> Plot Size: <span class="heading-primary">100x200x300</span>
+                            </li>
+                            <li><i class="fas fa-door-open"></i> Rooms: <span class="heading-primary">08</span></li>
+                        </ul>
+                        <ul class="detail-list">
+                            <li><i class="fas fa-home"></i> Built Year: <span class="heading-primary">09/05/2020</span>
+                            </li>
+                            <li><i class="fas fa-arrows-alt"></i> Sq ft: <span class="heading-primary">200 sq ft</span>
+                            </li>
+                            <li><i class="fas fa-tv"></i> Living Room: <span class="heading-primary">01</span></li>
+                            <li><i class="fas fa-venus-double"></i> Kitchens : <span class="heading-primary">01</span>
+                            </li>
+                            <li><i class="fas fa-torii-gate"></i> Oriantation: <span
+                                    class="heading-primary">North</span></li>
+                        </ul>
+                    </div>
+                    <h4>Fecilities</h4>
+                    <div class="lists">
+                        <ul class="detail-list">
+                            <li><i class="fas fa-check primary-color"></i> AC : Ceiling Fan(s), Central</li>
+                            <li><i class="fas fa-check primary-color"></i> AP # : 7250-998-114</li>
+                            <li><i class="fas fa-check primary-color"></i> Appliances : Gas, Dishwasher, <br> Garbage
+                                Disposal</li>
+                        </ul>
+                        <ul class="detail-list">
+                            <li><i class="fas fa-check primary-color"></i> Acres : 0.16</li>
+                            <li><i class="fas fa-check primary-color"></i> Acres : 0.16</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="single-item detail-video mb-30">
+                    <h4>Propertis Video</h4>
+                    <div class="video-item">
+                        <img src="https://via.placeholder.com/710x375/ededed/999/" alt="Behome" class="img-fluid">
+                        <a data-fancybox="YouTube" href="https://www.youtube.com/watch?v=Maz7qkLzwYw"
+                            class="youtube-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="single-item virtual-tour mb-30">
+                    <h4>360° Virtual Tour</h4>
+                    <img src="https://via.placeholder.com/710x375/ededed/999/" alt="Behome" class="img-fluid">
+                </div>
+                <div class="single-item mb-30">
+                    <h4>Floor Plans</h4>
+                    <div class="property-collapse">
+                        <div class="collapse-item show">
+                            <div class="head">
+                                <div class="left-head">
+                                    <h5 class="mb-1">First Floor</h5>
+                                    <p class="mb-0">Beds : 2 &nbsp; Bath : 2 &nbsp; Sqft : 750</p>
+                                </div>
+                                <div class="right-head">
+                                    <a href="#" class="view-more collapse-click">View More</a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <img src="img/property/map.png" alt="Behome" class="img-fluid">
+                            </div>
+                        </div>
+
+                        <div class="collapse-item">
+                            <div class="head">
+                                <div class="left-head">
+                                    <h5 class="mb-1">Second Floor</h5>
+                                    <p class="mb-0">Beds : 2 &nbsp; Bath : 2 &nbsp; Sqft : 750</p>
+                                </div>
+                                <div class="right-head">
+                                    <a href="#" class="view-more collapse-click">View More</a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <img src="img/property/map.png" alt="Behome" class="img-fluid">
+                            </div>
+                        </div>
+
+                        <div class="collapse-item">
+                            <div class="head">
+                                <div class="left-head">
+                                    <h5 class="mb-1">Third Floor</h5>
+                                    <p class="mb-0">Beds : 2 &nbsp; Bath : 2 &nbsp; Sqft : 750</p>
+                                </div>
+                                <div class="right-head">
+                                    <a href="#" class="view-more collapse-click">View More</a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <img src="img/property/map.png" alt="Behome" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-item mb-30">
+                    <h4 class="pb-2">Map</h4>
+                    <div class="map-canvas" id="map-canvas" style="width: 100%; height: 350px;"></div>
+                </div>
+                <div class="single-item mb-30 thumbnail-items">
+                    <h4>Real Estate</h4>
+                    <div class="thumb-items mb-30">
+                        <div class="thumb-item row mb-30">
+                            <div class="col-8 d-flex item-details">
+                                <div class="img">
+                                    <img src="https://via.placeholder.com/80/ededed/000/" alt="Behome">
+                                </div>
+                                <div class="content align-self-center">
+                                    <h6 class="mb-1"><a href="#">Kids Arning Center for</a></h6>
+                                    <p class="mb-0">2500 Ponce De Leon Gables, FL 33134</p>
+                                </div>
+                            </div>
+                            <div class="col-4 align-self-center text-right">
+                                <p class="mb-1">1140 REVIEWS</p>
+                                <ul class="star-icons list-inline">
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="thumb-item row mb-30">
+                            <div class="col-8 d-flex item-details">
+                                <div class="img">
+                                    <img src="https://via.placeholder.com/80/ededed/000/" alt="Behome">
+                                </div>
+                                <div class="content align-self-center">
+                                    <h6 class="mb-1"><a href="#">Center for Kids</a></h6>
+                                    <p class="mb-0">2500 Ponce De Leon Gables, FL 33134</p>
+                                </div>
+                            </div>
+                            <div class="col-4 align-self-center text-right">
+                                <p class="mb-1">1140 REVIEWS</p>
+                                <ul class="star-icons list-inline">
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="thumb-item row">
+                            <div class="col-8 d-flex item-details">
+                                <div class="img">
+                                    <img src="https://via.placeholder.com/80/ededed/000/" alt="Behome">
+                                </div>
+                                <div class="content align-self-center">
+                                    <h6 class="mb-1"><a href="#">Kids Arning Center for</a></h6>
+                                    <p class="mb-0">2500 Ponce De Leon Gables, FL 33134</p>
+                                </div>
+                            </div>
+                            <div class="col-4 align-self-center text-right">
+                                <p class="mb-1">1140 REVIEWS</p>
+                                <ul class="star-icons list-inline">
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Restaurants</h4>
+                    <div class="thumb-items">
+                        <div class="thumb-item row mb-30">
+                            <div class="col-8 d-flex item-details">
+                                <div class="img">
+                                    <img src="https://via.placeholder.com/80/ededed/000/" alt="Behome">
+                                </div>
+                                <div class="content align-self-center">
+                                    <h6 class="mb-1"><a href="#">Fog Harbor Fish House</a></h6>
+                                    <p class="mb-0">2500 Ponce De Leon Gables, FL 33134</p>
+                                </div>
+                            </div>
+                            <div class="col-4 align-self-center text-right">
+                                <p class="mb-1">1140 REVIEWS</p>
+                                <ul class="star-icons list-inline">
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="thumb-item row mb-30">
+                            <div class="col-8 d-flex item-details">
+                                <div class="img">
+                                    <img src="https://via.placeholder.com/80/ededed/000/" alt="Behome">
+                                </div>
+                                <div class="content align-self-center">
+                                    <h6 class="mb-1"><a href="#">Authentic Turkish Restaurant</a></h6>
+                                    <p class="mb-0">2500 Ponce De Leon Gables, FL 33134</p>
+                                </div>
+                            </div>
+                            <div class="col-4 align-self-center text-right">
+                                <p class="mb-1">1140 REVIEWS</p>
+                                <ul class="star-icons list-inline">
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="thumb-item row">
+                            <div class="col-8 d-flex item-details">
+                                <div class="img">
+                                    <img src="https://via.placeholder.com/80/ededed/000/" alt="Behome">
+                                </div>
+                                <div class="content align-self-center">
+                                    <h6 class="mb-1"><a href="#">The Front Porch</a></h6>
+                                    <p class="mb-0">2500 Ponce De Leon Gables, FL 33134</p>
+                                </div>
+                            </div>
+                            <div class="col-4 align-self-center text-right">
+                                <p class="mb-1">1140 REVIEWS</p>
+                                <ul class="star-icons list-inline">
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-item property-form">
+                    <h4>Leave A Reply</h4>
+                    <p>* Your Email Address will not be published</p>
+                    <form>
+                        <ul class="list-inline">
+                            <li class="list-inline-item pr-3 heading-primary">Rating:</li>
+                            <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                            <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                            <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                            <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                            <li class="list-inline-item"><i class="fas fa-star primary-color"></i></li>
+                        </ul>
+                        <div class="input-full">
+                            <textarea name="message" placeholder="Your Message"></textarea>
+                        </div>
+                        <div class="input-half">
+                            <input type="text" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="input-half">
+                            <input type="email" name="email" placeholder="Your Email">
+                        </div>
+                        <div class="input-submit">
+                            <button type="submit" class="button button-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="property-sidebar">
+                    <div class="sidebar-item item-one mb-30">
+                        <div class="sidebar-author">
+                            <img src="https://via.placeholder.com/370x270/ededed/999/" alt="Behome" class="img-fluid">
+                            <div class="hover">
+                                <div class="author d-flex">
+                                    <div class="img">
+                                        <img src="img/property/thumb-6.png" alt="Behome">
+                                    </div>
+                                    <h6 class="mb-0 align-self-center color-white">Dilliama Nelissa</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <form>
+                                <input type="text" name="name" placeholder="Your Name*">
+                                <input type="email" name="email" placeholder="Your Email*">
+                                <textarea name="message" placeholder="Your Message*"></textarea>
+                                <button type="submit" class="d-block button button-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="sidebar-item item-two">
+                        <h4>Recently Viewed</h4>
+                        <div class="recent-item d-flex mb-30">
+                            <div class="img">
+                                <img src="https://via.placeholder.com/75/ededed/000/" alt="Behome">
+                            </div>
+                            <div class="content align-self-center">
+                                <h6 class="mb-1"><a href="#">Home in Merrick Way</a></h6>
+                                <p class="mb-0">$54,000</p>
+                            </div>
+                        </div>
+
+                        <div class="recent-item d-flex mb-30">
+                            <div class="img">
+                                <img src="https://via.placeholder.com/75/ededed/000/" alt="Behome">
+                            </div>
+                            <div class="content align-self-center">
+                                <h6 class="mb-1"><a href="#">Villa on Grand Avenue</a></h6>
+                                <p class="mb-0">$54,000</p>
+                            </div>
+                        </div>
+
+                        <div class="recent-item d-flex">
+                            <div class="img">
+                                <img src="https://via.placeholder.com/75/ededed/000/" alt="Behome">
+                            </div>
+                            <div class="content align-self-center">
+                                <h6 class="mb-1"><a href="#">Blue Pearl Therapeutic</a></h6>
+                                <p class="mb-0">$54,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
