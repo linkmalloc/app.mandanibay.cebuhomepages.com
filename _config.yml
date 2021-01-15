@@ -59,6 +59,10 @@ color:
 #   instance: example.com
 # - username: jekyll2
 #   instance: example.com
+collections:
+  listings:
+    output: true
+    permalink: /:collection/:name
 
 
 # Exclude from processing.
